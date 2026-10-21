@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a UNES Universidade.">
+    <title>Contato | UNES Universidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="UNES Universidade" width="213" height="57"></a>
+
+            <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-pagina">
+            <div class="container">
+                <h1>Contato</h1>
+                <p>Tire suas dúvidas sobre cursos, matrículas e bolsas.</p>
+            </div>
+        </div>
+
+        <div class="container contato">
+
+            <section class="contato-info">
+                <h2>Sobre a universidade</h2>
+                <p>Nossa equipe de atendimento responde em até 2 dias úteis. Preencha o formulário ao lado ou use um
+                    dos canais abaixo.</p>
+                <ul>
+                    <li>📍 Rua Exemplo, 123 – Centro</li>
+                    <li>📞 (00) 0000-0000</li>
+                    <li>✉️ contato@unes.edu.br</li>
+                </ul>
+            </section>
+
+            <!--
+                Para receber as mensagens no seu e-mail, crie um formulário grátis em https://formspree.io
+                e troque SEU_ID abaixo pelo código que ele gerar. Enquanto isso, o envio funciona em modo demonstração.
+            -->
+            <form class="formulario" id="form-contato" action="https://formspree.io/f/SEU_ID" method="POST" novalidate>
+                <div class="campo">
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+                    <small class="erro" aria-live="polite"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" minlength="3" maxlength="100" required>
+                    <small class="erro" aria-live="polite"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" minlength="10" maxlength="2000" required></textarea>
+                    <small class="erro" aria-live="polite"></small>
+                </div>
+
+                <button type="submit" class="botao">Enviar mensagem</button>
+                <p class="status" role="status"></p>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <span>&copy; <span data-ano>2026</span> UNES Universidade. Todos os direitos reservados.</span>
+            <a href="contato.html">Fale conosco</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

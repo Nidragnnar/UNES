@@ -3,60 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNES</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="UNES Universidade: cursos de graduação com tecnologia no seu aprendizado.">
+    <title>UNES Universidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="UNES Universidade" width="213" height="57"></a>
 
-        <img src="https://erichenriquesm.github.io/html5-e-css3/exerc%C3%ADcios/site-g/imagens/logo.png" alt="logo">
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="pg2.html">Quem Somos</a> |
-            <a href="contatos.html">Contados</a>
+            <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
 
-        </nav>
+            <nav class="menu" id="menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
     <main>
+        <div class="container">
 
-        <img src="https://erichenriquesm.github.io/html5-e-css3/exerc%C3%ADcios/site-g/imagens/capa.png" alt="capa">
+            <div class="capa">
+                <img src="img/capa.png" alt="Pessoa usando um tablet em uma sala de aula. Texto: Tecnologia no seu aprendizado"
+                    width="900" height="414">
+            </div>
 
-        <h1>Veja nossos Cursos</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sed quibusdam exercitationem velit asperiores
-            ullam tempora laboriosam ab eligendi in suscipit autem sapiente, officia voluptatibus, aspernatur dolores,
-            tempore sunt libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa optio totam, quod
-            laudantium unde explicabo! Eos minima, omnis suscipit officiis facilis ut est, saepe quaerat voluptatem
-            accusamus maiores sed nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi libero
-            natus, ab maiores minus quas quisquam repellat fuga beatae sit quasi sapiente impedit porro ea vel dolore
-            quis nostrum?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sed quibusdam exercitationem velit asperiores
-            ullam tempora laboriosam ab eligendi in suscipit autem sapiente, officia voluptatibus, aspernatur dolores,
-            tempore sunt libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa optio totam, quod
-            laudantium unde explicabo! Eos minima, omnis suscipit officiis facilis ut est, saepe quaerat voluptatem
-            accusamus maiores sed nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi libero
-            natus, ab maiores minus quas quisquam repellat fuga beatae sit quasi sapiente impedit porro ea vel dolore
-            quis nostrum?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sed quibusdam exercitationem velit asperiores
-            ullam tempora laboriosam ab eligendi in suscipit autem sapiente, officia voluptatibus, aspernatur dolores,
-            tempore sunt libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa optio totam, quod
-            laudantium unde explicabo! Eos minima, omnis suscipit officiis facilis ut est, saepe quaerat voluptatem
-            accusamus maiores sed nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi libero
-            natus, ab maiores minus quas quisquam repellat fuga beatae sit quasi sapiente impedit porro ea vel dolore
-            quis nostrum?</p>
+            <section class="secao">
+                <h1>Veja nossos cursos</h1>
+                <p>Na UNES você encontra cursos de graduação pensados para o mercado atual, com professores
+                    experientes, aulas práticas e tecnologia presente em todas as etapas do aprendizado.</p>
+            </section>
 
+            <section class="secao grade" aria-label="Cursos">
+                <article class="card">
+                    <div class="icone" aria-hidden="true">💻</div>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Programação, banco de dados e desenvolvimento web e mobile do zero ao avançado.</p>
+                </article>
+                <article class="card">
+                    <div class="icone" aria-hidden="true">📊</div>
+                    <h3>Administração</h3>
+                    <p>Gestão de pessoas, finanças e estratégia para liderar empresas de qualquer porte.</p>
+                </article>
+                <article class="card">
+                    <div class="icone" aria-hidden="true">🎨</div>
+                    <h3>Design Gráfico</h3>
+                    <p>Identidade visual, interfaces e comunicação com foco em criatividade e técnica.</p>
+                </article>
+                <article class="card">
+                    <div class="icone" aria-hidden="true">🩺</div>
+                    <h3>Enfermagem</h3>
+                    <p>Formação completa com laboratórios modernos e estágio em hospitais parceiros.</p>
+                </article>
+            </section>
+
+        </div>
     </main>
 
-    <footer>
-        Todos os direitos reservados
+    <footer class="rodape">
+        <div class="container">
+            <span>&copy; <span data-ano>2026</span> UNES Universidade. Todos os direitos reservados.</span>
+            <a href="contato.html">Fale conosco</a>
+        </div>
     </footer>
-
-
 
 </body>
 
